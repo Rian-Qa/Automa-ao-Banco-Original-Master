@@ -10,6 +10,14 @@ public class Steps {
 	Metodos m = new Metodos();
 	Elementos e = new Elementos();
 
+	public Metodos getM() {
+		return m;
+	}
+
+	public Elementos getE() {
+		return e;
+	}
+
 	@Given("que o usuario acesse a url {string}")
 	public void que_o_usuario_acesse_a_url(String url) {
 		m.abrirNavegador(url);
@@ -46,35 +54,4 @@ public class Steps {
 		m.fecharNavegador();
 	}
 
-	// Pessoa Juridica
-
-	@Given("selecionar o botao abrir conta para sua empresa")
-	public void selecionar_o_botao_abrir_conta_para_sua_empresa() {
-		m.clicar(e.getBtnAbrirContaPj());
-	}
-
-	@Given("selecionar o botao abrir conta pessoa unica")
-	public void selecionar_o_botao_abrir_conta_pessoa_unica() {
-		m.clicar(e.getBtnBotaoAbrirContaPessoaUnica());
-	}
-
-	@Given("e preencher o campo com o nome {string}")
-	public void e_preencher_o_campo_com_o_nome(String nome) {
-		m.preencher(e.getCampoNome(), nome);
-	}
-
-	@Given("e preencher o campo com o email {string}")
-	public void e_preencher_o_campo_com_o_email(String email) {
-		m.preencher(e.getCampoEmail(), email);
-	}
-
-	@Given("e preencher o campo com cpf {string}")
-	public void e_preencher_o_campo_com_cpf(String cpf) {
-		m.preencher(e.getCampoCpf(), cpf);
-	}
-
-	@Given("e preencher o campo com telefone {string}")
-	public void e_preencher_o_campo_com_telefone(String telefone) {
-		m.preencher(e.getCampoTelefone(), telefone);
-	}
 }
