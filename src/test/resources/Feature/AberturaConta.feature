@@ -3,7 +3,7 @@
 Feature: Abertura de conta
 
   @pf
-  Scenario Outline: Abertura de conta pessoa fisica
+  Scenario Outline: Abertura de conta pessoa Fisica
   Given que o usuario acesse a url "https://www.original.com.br/"
   And selecionar o botao abrir nova conta
  And selecionar o botao abrir conta para voce
