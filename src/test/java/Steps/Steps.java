@@ -53,5 +53,23 @@ public class Steps {
 		m.validarTexto(e.getTextoFaltaPouco(), "Falta pouco!");
 		m.fecharNavegador();
 	}
+	@When("e preencher o campo com o nome {string}")
+	public void e_preencher_o_campo_com_o_nome(String string) {
+	  m.preencher(e.getCampoNome(), string);
+	}
 
+	@When("e preencher o campo com o email {string}")
+	public void e_preencher_o_campo_com_o_email(String string) {
+	    m.preencher(e.getCampoEmail(), string);
+	}
+
+	@When("e preencher o campo com cpf {string}")
+	public void e_preencher_o_campo_com_cpf(String string) {
+	    m.preencher(e.getCampoCpf(), string);
+	}
+
+	@When("e preencher o campo com telefone {string}")
+	public void e_preencher_o_campo_com_telefone(String string) {
+	    m.preencher(e.getCampoTelefone(), string);
+	}
 }

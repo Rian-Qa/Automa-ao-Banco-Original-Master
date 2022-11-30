@@ -17,9 +17,6 @@ public class Elementos {
 	private By btnAbrirContaPj = By.id("bt2");
 	private By btnBotaoAbrirContaPessoaUnica = By.id("bt3");
 
-	
-
-
 	public By getBtnAbrirContaPj() {
 		return btnAbrirContaPj;
 	}
